@@ -1,6 +1,14 @@
-This is a general guide in how to set up Prettier with VS Code. The aim of this guide is not to be exhaustive, this is the minimum you need to get started. The reason for this is that it will show you the minumum of what is truly needed to get going with Prettier, so when you set up or adopt a more complicated setup, you will be better informed about what's needed and what isnt.
+# This is a general guide in how to set up Prettier with VS Code.
 
-If you DO want info on a solid, industry standard Prettier / VS Code setup, I recommend [this video from Wes Bos](https://www.youtube.com/watch?v=lHAeK8t94as&t=522s).
+The aim of this guide is to:
+
+- get you up and running
+- work for more than teams of more than one dev
+- keep things simple enough so you can be confident in making changes yourself
+
+The aim of this guide is not to:
+
+- be exhaustive, [Wes Bos will bring you along that path](https://www.youtube.com/watch?v=lHAeK8t94as&t=522s).
 
 ## Step 1: VS Code setup
 
