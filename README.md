@@ -22,9 +22,9 @@ Type "Prettier - Code formatter" into the search box. Install the one by Esben P
 
 #### [Optional] only run Prettier in folders with a .prettierrc
 
-Sometimes you dont want Prettier to run. For example, if you bring in a file from a project that DOESNT have Prettier and you save a file, you could reformat every line in any file you save. That means in code review your peers wont be able to tell what changes you made, because every line of code has changes! Oh no!
+Sometimes you dont want Prettier to run. If you change file in a project that DOESNT have Prettier you will reformat every line in that file! That means whoever is reviewing yourcode wont be able to tell what changes you made. Oh no!
 
-To avoid this, change the Settings on the Prettier extension we just installed. Go to the overall VS Code settings. You should see a search bar at the top. Search for "Prettier:Require Config" and check the box. This will make it so that Prettier will only run in a folder that has a Prettier config file, called `.prettierrc`.
+To avoid this, change the Settings on the Prettier extension we installed. Go to the VS Code settings. You should see a search bar at the top. Search for "Prettier:Require Config" and check the box. This will make it so that Prettier will only run in a folder that has a Prettier config file, called `.prettierrc`.
 
 ![Prettier settings with Prettier:Require Config searched for and ticked](https://raw.githubusercontent.com/davidfitzgibbon/lofi-prettier/master/img/prettier-settings.png "Prettier settings with Prettier:Require Config searched for and ticked")
 
@@ -33,19 +33,19 @@ If you have followed this step, add a `.prettierrc` file. It needs to be a valid
 
 ## Step 2: Choose a version of Prettier to run
 
-When I say choose here, I dont mean you need to go through a list. What we need here is any version, we just need to note it, so that everyone in our team can be using the same version.
+When I say choose here, I dont mean you need to go through a list. What we need here is any version, we need to note it, so that everyone in our team can be using the same version.
 
-Note: if you have downloaded the demo files here, just run `npm i` to install Prettier and [skip this step](#step-3-write-some-terrible-code)
+Note: if you have downloaded the demo files here, run `npm i` to install Prettier and [skip this step](#step-3-write-some-terrible-code)
 
 The best way to do this is with a `package.json`, and using npm is the best way to achieve that.
 
-To begin, we need a package.json. These can be a little intimidating to set up, and they often come with lots of stuff in there that you might not need on a smaller team.
+To begin, we need a `package.json`. These can be a little intimidating to set up. They often come with lots of stuff in there that you might not need on a smaller team. We're going to generate one here to save time.
 
-To get the basics going, open up a terminal in your folder ( Terminal > New Terminal ) and type `npm init -y`. This will create a package.json for you. The `-y` command just says "yes" to all the qutesions you would usually be asked when setting up a `package.json`. If your repo is private this might not matter too much, but if you're going public with it, then you should actually look into what everything in this file means at some point. Especially the licence info.
+To get the basics going, open up a terminal in your folder ( Terminal > New Terminal ) and type `npm init -y`. This will create a package.json for you. The `-y` command says "yes" to all the questions npm usually asks you when setting up a `package.json`. If your repo is public then you should look into what everything in this file means at some point. Especially the licence info. [Here's the site to learn more](https://docs.npmjs.com/files/package.json).
 
 Ok, so we have a `package.json`. Now we need to tell it which Prettier package we want to use. In your terminal run `npm install --save-dev prettier`.
 
-This command has done a few things. First, it has installed Prettier locally in your node_modules. Second, it has saved in your `package.json` the version of Prettier that you're now using. Third it has saved this version only as a dev dependancy. This means that when a developer `npm install`s locally, Prettier will install, but when you're deploying, eg to Netlify, then Prettier doesnt install, because it's not needed. Neat!
+This command has done a few things. First, it has installed Prettier locally in your node_modules. Second, it has saved in your `package.json` the version of Prettier that you're now using. Third it has saved this version only as a dev dependancy. This means that Prettier only installs locally when a developer `npm install`s. Prettier wont install on deploy, eg to Netlify, because it's not needed there. Neat!
 
 ## Step 3: Write some terrible code
 
