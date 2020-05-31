@@ -6,9 +6,9 @@ The aim of this guide is to:
 - work for more than teams of more than one dev
 - keep things simple enough so you can be confident in making changes yourself
 
-The aim of this guide is not to:
+The aim of this guide is NOT:
 
-- be exhaustive, [Wes Bos will bring you along that path](https://www.youtube.com/watch?v=lHAeK8t94as&t=522s).
+- to be exhaustive, [Wes Bos will bring you along that path](https://www.youtube.com/watch?v=lHAeK8t94as&t=522s).
 
 ## Step 1: VS Code setup
 
