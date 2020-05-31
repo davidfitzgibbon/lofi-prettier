@@ -10,11 +10,15 @@ Go to the Extensions Tab. You can get there through by clicking View > Extension
 
 Type "Prettier - Code formatter" into the search box. Install the one by Esben Peterson.
 
+![Esben Petersons Extension in VS Code Extensions List](https://raw.githubusercontent.com/davidfitzgibbon/lofi-prettier/master/img/prettier-vscode.png "Esben Petersons Extension in VS Code Extensions List")
+
 #### [Optional] only run Prettier in folders with a .prettierrc
 
 Sometimes you dont want Prettier to run. For example, if you bring in a file from a project that DOESNT have Prettier and you save a file, you could reformat every line in any file you save. That means in code review your peers wont be able to tell what changes you made, because every line of code has changes! Oh no!
 
 To avoid this, change the Settings on the Prettier extension we just installed. Go to the overall VS Code settings. You should see a search bar at the top. Search for "Prettier:Require Config" and check the box. This will make it so that Prettier will only run in a folder that has a Prettier config file, called `.prettierrc`.
+
+![Prettier settings with Prettier:Require Config searched for and ticked](https://raw.githubusercontent.com/davidfitzgibbon/lofi-prettier/master/img/prettier-settings.png "Prettier settings with Prettier:Require Config searched for and ticked")
 
 If you have followed this step, add a `.prettierrc` file. It needs to be a valid Prettier config file, so it needs content. All you need to create a valid config is an empty object, so this should be the entire content of your file
 `{}`
