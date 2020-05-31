@@ -16,7 +16,8 @@ Sometimes you dont want Prettier to run. For example, if you bring in a file fro
 
 To avoid this, change the Settings on the Prettier extension we just installed. Go to the overall VS Code settings. You should see a search bar at the top. Search for "Prettier:Require Config" and check the box. This will make it so that Prettier will only run in a folder that has a Prettier config file, called `.prettierrc`.
 
-If you have followed this step, add a `.prettierrc` file. It needs to be a valid Prettier config file, so it needs content. All you need to enter is an empty object like this `{}`.
+If you have followed this step, add a `.prettierrc` file. It needs to be a valid Prettier config file, so it needs content. All you need to create a valid config is an empty object, so this should be the entire content of your file
+`{}`
 
 ## Step 2: Choose a version of Prettier to run
 
