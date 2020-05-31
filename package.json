@@ -1,0 +1,23 @@
+{
+  "name": "lofi-prettier",
+  "version": "1.0.0",
+  "description": "This is a general guide in how to set up Prettier with VS Code. The aim of this guide is not to be exhaustive, this is the minimum you need to get started. The reason for this is that it will show you the minumum of what is truly needed to get going with Prettier, so when you set up or adopt a more complicated setup, you will be better informed about what's needed and what isnt.",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidfitzgibbon/lofi-prettier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidfitzgibbon/lofi-prettier/issues"
+  },
+  "homepage": "https://github.com/davidfitzgibbon/lofi-prettier#readme"
+}
