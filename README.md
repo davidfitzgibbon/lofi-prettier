@@ -2,7 +2,7 @@ This is a general guide in how to set up Prettier with VS Code. The aim of this 
 
 If you DO want info on a solid, industry standard Prettier / VS Code setup, I recommend [this video from Wes Bos](https://www.youtube.com/watch?v=lHAeK8t94as&t=522s).
 
-## VS Code setup
+## Step 1: VS Code setup
 
 The first thing you need is to set up VS Code for Prettier. By default it doesnt know what Prettier is, so we need to get it up to speed.
 
@@ -18,11 +18,11 @@ To avoid this, change the Settings on the Prettier extension we just installed. 
 
 If you have followed this step, add a `.prettierrc` file. It needs to be a valid Prettier config file, so it needs content. All you need to enter is an empty object like this `{}`.
 
-## Choose a version of Prettier to run
+## Step 2: Choose a version of Prettier to run
 
 When I say choose here, I dont mean you need to go through a list. What we need here is any version, we just need to note it, so that everyone in our team can be using the same version.
 
-Note: if you have downloaded the demo files here, just run `npm i` to install Prettier and [skip this step](#write-some-terrible-code)
+Note: if you have downloaded the demo files here, just run `npm i` to install Prettier and [skip this step](#step-3-write-some-terrible-code)
 
 The best way to do this is with a `package.json`, and using npm is the best way to achieve that.
 
@@ -34,7 +34,7 @@ Ok, so we have a `package.json`. Now we need to tell it which Prettier package w
 
 This command has done a few things. First, it has installed Prettier locally in your node_modules. Second, it has saved in your `package.json` the version of Prettier that you're now using. Third it has saved this version only as a dev dependancy. This means that when a developer `npm install`s locally, Prettier will install, but when you're deploying, eg to Netlify, then Prettier doesnt install, because it's not needed. Neat!
 
-# Write some terrible code
+## Step 3: Write some terrible code
 
 Now you should be set up. You have Prettier installed in VS Code. You may or may not have a .prettierrc file to enable Prettier. You have a version of Prettier installed locally in your project folder. You should be able to write some terribly formatted code now, and see it Prettier magically fix it when you save!
 
