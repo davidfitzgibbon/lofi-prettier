@@ -3,7 +3,7 @@
 The aim of this guide is to:
 
 - get you up and running
-- work for more than teams of more than one dev
+- works for teams
 - keep things simple enough so you can be confident in making changes yourself
 
 The aim of this guide is NOT:
