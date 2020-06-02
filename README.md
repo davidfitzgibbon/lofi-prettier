@@ -20,6 +20,12 @@ Type "Prettier - Code formatter" into the search box. Install the one by Esben P
 
 ![Esben Petersons Extension in VS Code Extensions List](https://raw.githubusercontent.com/davidfitzgibbon/lofi-prettier/master/img/prettier-vscode.png "Esben Petersons Extension in VS Code Extensions List")
 
+#### Enable format on save
+
+Now you have Prettier installed, but it doesnt know when to run yet. Go to the VS Code settings, and in the search bar at the top search for "Editor:format on save". Enable this option.
+
+![VS Code Settings, format on save ticked](https://raw.githubusercontent.com/davidfitzgibbon/lofi-prettier/master/img/prettier-format-on-save.png "VS Code Settings, format on save ticked")
+
 #### [Optional] only run Prettier in folders with a .prettierrc
 
 Sometimes you dont want Prettier to run. If you change file in a project that DOESNT have Prettier you will reformat every line in that file! That means whoever is reviewing yourcode wont be able to tell what changes you made. Oh no!
